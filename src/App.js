@@ -1,25 +1,18 @@
+
+import './global.css';
 import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import ProtectedRoute from './components/ProtectedRoute';
-import SignInPage from './components/SignInPage';
-import HomePage from './components/HomePage';
+import { useScrollToTop } from './hooks/use-scroll-to-top';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <ProtectedRoute><HomePage/></ProtectedRoute>,
-  },
-  {
-    path: "/signin",
-    element: <SignInPage />
-  }
-]);
+import Router from './routes/sections';
+import ThemeProvider from './theme';
 
-function App() {
+// ----------------------------------------------------------------------
+
+export default function App() {
+  useScrollToTop();
+
   return (
+<<<<<<< HEAD
 <<<<<<< HEAD
     <div className="App">
       <header className="App-header">
@@ -40,7 +33,38 @@ function App() {
 =======
     <RouterProvider router={router} />
 >>>>>>> 2f09116 (added files for firestore authentication)
+=======
+    <ThemeProvider>
+      <Router />
+    </ThemeProvider>
+>>>>>>> 64d0a95 (updating mui files)
   );
 }
 
-export default App;
+// import React from 'react';
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
+// import ProtectedRoute from './components/ProtectedRoute';
+// import SignInPage from './components/SignInPage';
+// import HomePage from './components/HomePage';
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <ProtectedRoute><HomePage/></ProtectedRoute>,
+//   },
+//   {
+//     path: "/signin",
+//     element: <SignInPage />
+//   }
+// ]);
+
+// function App() {
+//   return (
+//     <RouterProvider router={router} />
+//   );
+// }
+
+// export default App;

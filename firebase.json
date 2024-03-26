@@ -4,7 +4,11 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+<<<<<<< HEAD
     "public": "build",
+=======
+    "public": "public",
+>>>>>>> e6d9003 (Add product creation functionality and update security rules)
     "ignore": [
       "firebase.json",
       "**/.*",

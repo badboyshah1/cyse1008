@@ -1,5 +1,9 @@
 {
   "projects": {
+<<<<<<< HEAD
     "default": "cyse1008-c8b6f"
+=======
+    "default": "cyse1008-b046a"
+>>>>>>> e6d9003 (Add product creation functionality and update security rules)
   }
 }

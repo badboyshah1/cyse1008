@@ -13,6 +13,7 @@ export default function App() {
   return (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -37,6 +38,11 @@ export default function App() {
       <Router />
     </ThemeProvider>
 >>>>>>> 64d0a95 (updating mui files)
+=======
+    <ThemeProvider>
+      <Router />
+    </ThemeProvider>
+>>>>>>> feature/assignment3
   );
 }
 
